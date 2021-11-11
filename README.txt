@@ -1,11 +1,4 @@
 
-CS210 Final Project
-
-Lijun Chen (U91123888)
-Ziyao Zhang (U46618591)
-
-
-
 Part 1:
 
 The data structure we use in this project is linked list (to connect blocks of memory together). To do this, we use struct to define a new type Chunk. Chunk is a block that includes the following information: the pointer to the next block and the pointer to the previous block, the size of the block, whether it is already allocated or not and a data part that can be used to actually allocate memory. To initialize, we use the malloc() routine to allocate size byte of memory on M1. We set the address to its previous block, next block and whether it’s allocated all to 0. The size of it is the size of M1 subtracted by the memory to hold raw information.
